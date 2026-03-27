@@ -190,7 +190,7 @@ let searchName = document.getElementById("searchInput");
 let searchProductByName = () => {
   let searchTerm = searchName.value.toLowerCase().trim();
 
-  let filteredProducts = products.filter((pro) => {
+  products = products.filter((pro) => {
     return pro.name.toLowerCase().trim().includes(searchTerm);
   });
   renderData();
